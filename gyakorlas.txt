@@ -1,0 +1,43 @@
+'''def prime():
+    a = input("Kérem a számot ")
+    x = input("Kérem a számot ")
+    if a % x == 0:
+        print("Prime")
+    else:
+        print("Not prime")'''
+
+
+def game():
+    player1 = input("Válassz egy lépést ")
+    player2 = input("Válassz egy lépést ")
+    if player1 == "Rock" and player2 == "Scissors":
+        print("Player1 won")
+        if player1 == "Scissors" and player2 == "Paper":
+            print("Player1 won")
+            if player1 == "Paper" and player2 == "Rock":
+                print("Player1 won")
+    else:
+        print("Player2 won")
+
+
+'''def fibonacci():
+    print("Hány számot kérsz? ")
+    a = input("Írd ide a számot ")
+    for a in range(a):
+        print(a=a+1)'''
+
+
+def farmer():
+    chicken = input("Kérem a csirkék darabszámot ")
+    cows = input("Kérem a tehenek darabszámot ")
+    pigs = input("Kérem a malacok darabszámot ")
+
+    chicken = chicken*2
+    cows = cows*4
+    pigs = pigs*4
+    Mennyiseg = chicken + cows + pigs
+    print(Mennyiseg)
+
+if __name__=="__main__":
+    game()
+    farmer()
