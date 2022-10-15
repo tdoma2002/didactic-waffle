@@ -1,0 +1,26 @@
+def Developer():
+    print("Developer létrehozva")
+class Team:
+    def __init__(self, Alk_nev, Projekt, szerepkör):
+        self._Alk_nev = Alk_nev
+        self._Projekt = Projekt
+        self._szerepkör = szerepkör
+
+    def __eq__(self, masik_dolgozo):
+        if self._Projekt == masik_dolgozo._Projekt:
+            print(self._Alk_nev, "és", masik_dolgozo._Alk_nev, "dolgoznak egy projekten.")
+dolgozo1 = Team("Ricsi", "SolArch", "Frontend")
+dolgozo2 = Team("Angéla", "ZerTeng", "Tesztelő")
+dolgozo3 = Team("Peti", "KefERP", "Backend")
+dolgozo4 = Team("Éva", "KefERP", "Frontend")
+
+Developer()
+print(dolgozo1._Alk_nev, "a", dolgozo1._Projekt, "-en dolgozik", dolgozo1._szerepkör, "szerepkörben.")
+Developer()
+print(dolgozo2._Alk_nev, "a", dolgozo2._Projekt, "-en dolgozik", dolgozo2._szerepkör, "szerepkörben.")
+Developer()
+print(dolgozo3._Alk_nev, "a", dolgozo3._Projekt, "-en dolgozik", dolgozo3._szerepkör, "szerepkörben.")
+Developer()
+print(dolgozo4._Alk_nev, "a", dolgozo4._Projekt, "-en dolgozik", dolgozo4._szerepkör, "szerepkörben.")
+Developer()
+print(dolgozo3 == dolgozo4)
