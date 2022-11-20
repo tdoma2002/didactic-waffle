@@ -1,0 +1,13 @@
+if __name__ == '__main__':
+    tobbszint = int(input('Hány számot kérsz be?'))
+    elsosor = '{:>3}{:>6}' + ('{>4}' * (tobbszint -1))
+    tobbszam = Lista=(range(1,tobbszint+1))
+
+    print(layout.format('', *tobbszam))
+    print(' :-------' + ('----' * (tobbszint-1)))
+
+    for szam in tobbszam:
+        bemenet = [str(szam) +  ':']
+        for sokret in tobbszam:
+            bemenet.append(szam * sokret)
+            print(layout.format(*bemenet))
